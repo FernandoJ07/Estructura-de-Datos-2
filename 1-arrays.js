@@ -40,7 +40,7 @@ console.log(instrumentoLargo); // --> "clarinete"
 
 // 10. filter( Devuelve un nuevo array con todos los elementos que cumplen con la condicion especificada
 let instrumentosCortos = instrumentos.filter(instrumento => instrumento.length <= 6);
-console.log(instrumentosCortos); // --> ["piano", "bateria"]
+console.log(instrumentosCortos); // --> ["flauta", "piano"]
 
 // 11. map: Crea un nuevo array con los resultados de aplicar una funcion a cada elemento
 let instrumentosMayus = instrumentos.map(instrumento => instrumento.toUpperCase());
