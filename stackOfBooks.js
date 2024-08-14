@@ -30,13 +30,13 @@ const book2 = {nombre: "nombre2", isbn: 87654321, autor: "autor2", editorial: "e
 const book3 = {nombre: "nombre3", isbn: 81726354, autor: "autor1", editorial: "editorial1"}
 
 
-const stack = new Stack();
-stack.push(book1);
-stack.push(book2);
-stack.push(book3);
-stack.print();
-console.log(stack.size());
-console.log(stack.peek());
-console.log(stack.pop());
-stack.print();
+const libros = new Stack();
+libros.push(book1);
+libros.push(book2);
+libros.push(book3);
+libros.print();
+console.log(libros.size());
+console.log(libros.peek());
+console.log(libros.pop());
+libros.print();
 
