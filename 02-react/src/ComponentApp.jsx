@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AddCategory from "./componentes/AddCategory";
+import { GiftGrid } from "./componentes/GiftGrid";
 
 
 
@@ -13,12 +14,12 @@ export const ComponenetApp = () => {
     }
     return (
         <>
-            <h1>Categoría Películas</h1>
+            <h1>GiftExpert</h1>
             <AddCategory onAddCategory={onAddCategory}/>
             <ul className="categoryList">
                 {
-                    categories.map((category, index) => (
-                        <li key={index}>{category}</li>
+                    categories.map((category, key) => (
+                        <GiftGrid category={category} key={key}/>
                     ))
                 }
             </ul>
