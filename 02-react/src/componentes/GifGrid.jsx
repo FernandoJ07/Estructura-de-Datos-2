@@ -1,4 +1,4 @@
-export const GiftGrid = ({key, category}) => {
+export const GifGrid = ({key, category}) => {
     return (
         <>
          <li key={key}>{category}</li>   
