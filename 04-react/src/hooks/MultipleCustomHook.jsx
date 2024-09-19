@@ -3,11 +3,10 @@ import { useFetch } from "./useFetch";
 
 export const MultipleCustomHooks = ({value}) => {
     const {counter, handleAdd} = useCounter(value);
-    const {data, isLoading, hasError} = useFetch(`https://api.breakingbadquotes.xyz/v1/quotes/${counter}`);
-
+    const {data, isLoading, hasError} = useFetch(`https://pokeapi.co/api/v2/pokemon-form/${counter}/`);
     return (
         <div>
-            <h1>Breaking Bad Quotes</h1>
+            <h1>Poke api</h1>
             <hr />
             {
                 isLoading ? (
@@ -16,8 +15,8 @@ export const MultipleCustomHooks = ({value}) => {
                     <p>Error: {hasError}</p>
                 ) : data && (
                     <div>
-                        <p>{data[0].author}</p>
-                        <blockquote>{data[0].quote}</blockquote>
+                        <p>{data.name}</p>
+                        <img width="200px" height="200px" src={data.sprites.front_default} alt={data.name} />
                     </div>
                 )
             }
