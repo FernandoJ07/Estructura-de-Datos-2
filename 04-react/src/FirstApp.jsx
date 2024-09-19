@@ -1,6 +1,4 @@
-import { MultipleCustomHooks } from "./hooks/MultipleCustomHook";
-import { useCounter } from "./hooks/useCounter";
-import { useFetch } from "./hooks/useFetch";
+import { MultipleCustomHooks } from "./hooks";
 
 const FirstApp = ({value}) => {
 
@@ -11,7 +9,7 @@ const FirstApp = ({value}) => {
             <button onClick={handleAdd}>+1</button>
             <button onClick={handleReset}>Reset</button>
             <button onClick={handleSubtract}>-1</button> */}
-            <MultipleCustomHooks value={1}/>
+            <MultipleCustomHooks value={value}/>
         </>
     );
 }

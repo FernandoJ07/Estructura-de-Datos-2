@@ -20,7 +20,7 @@ export const MultipleCustomHooks = ({value}) => {
                     </div>
                 )
             }
-            <button onClick={handleAdd}>Next quote</button>
+            <button onClick={handleAdd}>Next pokemon</button>
         </div>
     );
 };
